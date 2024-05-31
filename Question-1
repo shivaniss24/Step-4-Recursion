@@ -1,0 +1,24 @@
+ 
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+    public static int sumNumbersRecursive(int n) {
+        if (n == 0) {
+            return 0;
+        } else {
+            return n + sumNumbersRecursive(n - 1);
+        }
+    }
+ 
+    public static void main(String[] args) {
+        int n = 5; // Replace 5 with the desired value of N
+        int result = sumNumbersRecursive(n);
+        System.out.println("The sum of numbers from 0 to " + n + " is: " + result);
+    }
+ 
+ 
+}
